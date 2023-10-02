@@ -1,0 +1,354 @@
+/* CSS Document */
+$fuente-titulos: "ImpactLabelReversedRegular";
+$fuente-principal: "banksiaregular" ;
+$color-fuente-principal: white;
+$color-fondo: black;
+
+@font-face {
+    font-family: 'banksiaregular';
+    src: url('../fonts/banksia-webfont.eot');
+    src: url('../fonts/banksia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/banksia-webfont.woff') format('woff'),
+         url('../fonts/banksia-webfont.ttf') format('truetype'),
+         url('../fonts/banksia-webfont.svg#banksiaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ImpactLabelReversedRegular';
+    src: url('../fonts/Impact_Label_Reversed-webfont.eot');
+    src: url('../fonts/Impact_Label_Reversed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Impact_Label_Reversed-webfont.woff') format('woff'),
+         url('../fonts/Impact_Label_Reversed-webfont.ttf') format('truetype'),
+         url('../fonts/Impact_Label_Reversed-webfont.svg#ImpactLabelReversedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+	font-size: 62.5%;
+	color: $color-fuente-principal;
+}
+
+body { 
+	background: url("../img/bg.jpg") fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:$fuente-titulos;
+}
+
+h2 {
+	margin:25px 0px;
+	padding:10px 0px;
+	font-size:3.2rem;
+	background: url("../img/bg-h2.png") left bottom no-repeat $color-fondo;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 5px 0px;
+    background-color: $color-fondo;
+    border-bottom: 3px solid rgb(152, 58, 58);
+    margin-bottom: 15px;
+}
+
+.container-md {
+	font-size: 1.6rem;
+	font-family: $fuente-principal;
+	color: $color-fuente-principal;
+}
+
+header {
+	background-color:$color-fondo;
+}
+
+/* Estructura basica */
+
+.logo {
+	margin:10px;
+}
+
+.Right-header {
+	min-height: 160px;
+}
+
+
+input[type='text']#consulta {
+    width: 100px;
+    height: 25px;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px inset $color-fondo;
+    margin-right: 10px;
+    transition: width 1s;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+input[type='text']#consulta:hover {
+    width: 200px;
+}
+
+#Buscar input[type='submit'] {
+    width: 80px;
+    height: 25px;
+	border: 2px solid grey;
+	line-height: 19px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    border-radius: 10px;
+    background: red;
+    color: $color-fuente-principal;
+    font-weight: 500;
+    transition:  background 1s;
+}
+#Buscar input[type='submit']:hover {
+    background: rgba(121,7,7,1);
+}
+
+/*nav {
+	margin: 0px 20px 20px 0px;
+}*/
+
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+
+ul li a {
+	color: $color-fuente-principal;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 3px solid $color-fuente-principal;
+	margin: 0 5px;
+	font-size: 1.4rem;
+}
+
+.nav-link {
+	color:$color-fuente-principal;
+}
+
+.nav-link:hover, nav ul li a:hover {
+	border-bottom: 3px solid red;
+	color: $color-fuente-principal;
+}
+.navbar-toggler-icon {
+	color:$color-fuente-principal;
+	width: 30px;
+	height: 30px;
+}
+
+ul li a.actual {
+	color:red;
+	border-color: red;
+}
+
+figure  {
+	position: relative;
+	padding-bottom:30px;
+	background-color: $color-fondo;
+	border-bottom:3px solid $color-fuente-principal;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+figure figcaption {
+	width: 460px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	position: absolute;
+	bottom:80px;
+	font-size: 2.5rem;
+	Background-color: rgba(255,255,255,0.5);
+	padding-left:40px;
+	box-shadow: 2px 2px 2px $color-fondo;
+    -moz-box-shadow: 2px 2px 2px $color-fondo;
+    -ms-box-shadow: 2px 2px 2px $color-fondo;
+    -o-box-shadow: 2px 2px 2px $color-fondo;
+	
+	text-shadow: 1px 1px 1px $color-fondo;
+	-moz-text-shadow: 1px 1px 1px $color-fondo;
+	-ms-text-shadow: 1px 1px 1px $color-fondo;
+	-o-text-shadow: 1px 1px 1px $color-fondo;
+}
+
+main section, main aside {
+	background-color:rgba(0,0,0,0.50);
+}
+
+main section article {
+	/*width:94%;
+	margin: 0px auto;*/
+	padding-bottom: 70px;
+	background: url("../img/separador.png") center bottom no-repeat;
+}
+
+section article img {
+	border: 4px solid $color-fuente-principal;
+	width: 100%;
+	height: auto;
+}
+
+section article p {
+	font-size: 1.5rem;
+    line-height: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+section article p + p {
+    font-weight: normal;
+    color: yellow;
+    margin-bottom: 5px;
+}
+
+section article p + a {
+	width: 150px;
+    line-height: 1.9rem;
+    color: $color-fuente-principal;
+    text-decoration: none;
+    background: url(../img/bg-vermas.png);
+    display: block;
+    padding-left: 10px;
+    transition: padding-left 1s;
+}
+
+section article p + a:hover {
+    padding-left: 20px;
+    color:$color-fuente-principal;
+}
+
+aside div.asideSection iframe {
+    width: 95%;
+    height: auto;
+	aspect-ratio:16/9;
+    border: 4px solid $color-fuente-principal;
+    margin: 7px 15px;
+}
+
+aside ul {
+	list-style: none;
+}
+
+aside ul li a {
+    font-size: 1.4rem;
+    text-align: right;
+    text-decoration: none;
+	text-transform: capitalize;
+    padding-right: 15px;
+    color: $color-fuente-principal;
+    line-height: 1.9rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px dotted $color-fuente-principal;
+    display: block;
+    transition: padding 1s;
+}
+
+aside ul li a:hover {
+    padding-right: 25%;
+    color: yellow;
+}
+
+footer {
+	height: 90px;
+	background: $color-fondo;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+}
+
+footer nav {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer-right {
+    width: 25%;
+    height: 50px;
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+/* Estilo del formularioContacto */
+
+article#contacto {
+    background: $color-fondo;
+}
+
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+}
+#formularioContacto input, #formularioContacto textarea {
+    width: 94%;
+    height: 45px;
+    margin: 0px auto 20px auto;
+    font-size: 1.1rem;
+    color: rgb(169, 166, 166);
+}
+#formularioContacto input {
+    height: 45px;
+}
+
+#formularioContacto textarea {
+    height: 207px;
+}
+#formularioContacto input[type='submit']{
+    width: 307px;
+    background: rgb(195, 67, 67);
+    color: $color-fuente-principal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    transition: font-size 1s;
+    align-self: flex-end;
+    margin: 0px 5px;
+}
+
+#formularioContacto input[type='submit']:hover {
+    font-size: 1.7rem;
+}
+
+/* Estilos página skateboarding */
+
+.dosColumnas, .tresColumnas  {
+    column-gap:25px;/* Separacion entre columnas */
+	-o-column-gap:25px;
+	-ms-column-gap:25px;
+	-moz-column-gap:25px;
+	-webkit-column-gap:25px;
+	
+	column-rule:1px dotted #ccc; /* Linea punteada de color gris */
+	-o-column-rule:1px dotted #ccc;
+	-moz-column-rule:1px dotted #ccc;
+	-webkit-column-rule:1px dotted #ccc;
+	-ms-column-rule:1px dotted #ccc;
+	
+	padding-bottom: 0px; /* le saco el padding que ya traia el articulo */
+	background: none; /* le saco el fondo de imagen del articulo */
+	margin-bottom: 25px;
+}
+.dosColumnas {
+    column-count: 2;
+}
+.tresColumnas {
+    column-count:3;
+}
+.dosColumnas p {
+    margin-bottom: 1rem;
+    line-height: 2.3rem;
+}
+div.dosColumnas img {
+    float: left;
+    margin: 0px 15px 15px 0px;
+}
