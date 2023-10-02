@@ -87,10 +87,9 @@ input[type='text']#consulta {
     margin-right: 10px;
     transition: width 1s;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-}
-
-input[type='text']#consulta:hover {
-    width: 200px;
+    &:hover {
+        width: 200px;
+    }
 }
 
 #Buscar input[type='submit'] {
@@ -104,15 +103,13 @@ input[type='text']#consulta:hover {
     color: $color-fuente-principal;
     font-weight: 500;
     transition:  background 1s;
+    &:hover {
+        background: rgba(121,7,7,1);
+    }
 }
-#Buscar input[type='submit']:hover {
-    background: rgba(121,7,7,1);
-}
-
 /*nav {
 	margin: 0px 20px 20px 0px;
 }*/
-
 
 nav ul {
 	display: flex;
@@ -154,41 +151,37 @@ figure  {
 	padding-bottom:30px;
 	background-color: $color-fondo;
 	border-bottom:3px solid $color-fuente-principal;
-}
-
-figure img {
-	width: 100%;
-	height: auto;
-}
-
-figure figcaption {
-	width: 460px;
-	height: 40px;
-	line-height: 40px;
-	display: block;
-	position: absolute;
-	bottom:80px;
-	font-size: 2.5rem;
-	Background-color: rgba(255,255,255,0.5);
-	padding-left:40px;
-	box-shadow: 2px 2px 2px $color-fondo;
-    -moz-box-shadow: 2px 2px 2px $color-fondo;
-    -ms-box-shadow: 2px 2px 2px $color-fondo;
-    -o-box-shadow: 2px 2px 2px $color-fondo;
-	
-	text-shadow: 1px 1px 1px $color-fondo;
-	-moz-text-shadow: 1px 1px 1px $color-fondo;
-	-ms-text-shadow: 1px 1px 1px $color-fondo;
-	-o-text-shadow: 1px 1px 1px $color-fondo;
-}
+    img {
+        width: 100%;
+        height: auto;
+    }
+    figcaption {
+        width: 460px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        position: absolute;
+        bottom:80px;
+        font-size: 2.5rem;
+        Background-color: rgba(255,255,255,0.50);
+        padding-left:40px;
+        box-shadow: 2px 2px 2px $color-fondo;
+        -moz-box-shadow: 2px 2px 2px $color-fondo;
+        -ms-box-shadow: 2px 2px 2px $color-fondo;
+        -o-box-shadow: 2px 2px 2px $color-fondo;
+        
+        text-shadow: 1px 1px 1px $color-fondo;
+        -moz-text-shadow: 1px 1px 1px $color-fondo;
+        -ms-text-shadow: 1px 1px 1px $color-fondo;
+        -o-text-shadow: 1px 1px 1px $color-fondo;
+    }
+} 
 
 main section, main aside {
 	background-color:rgba(0,0,0,0.50);
 }
 
 main section article {
-	/*width:94%;
-	margin: 0px auto;*/
 	padding-bottom: 70px;
 	background: url("../img/separador.png") center bottom no-repeat;
 }
@@ -220,58 +213,62 @@ section article p + a {
     display: block;
     padding-left: 10px;
     transition: padding-left 1s;
-}
-
-section article p + a:hover {
+    &:hover {
     padding-left: 20px;
     color:$color-fuente-principal;
+    }   
 }
 
 aside div.asideSection iframe {
     width: 95%;
-    height: auto;
-	aspect-ratio:16/9;
+  /*  height: 400px;
+	aspect-ratio:16/9; */
     border: 4px solid $color-fuente-principal;
     margin: 7px 15px;
 }
 
+.Pieiframe {
+    color: yellow;
+    line-height: 30px;
+    border: 2px dotted yellow;
+    border-left: 0px;
+    border-right: 0px;
+    display: block;
+    text-align: center;
+    background-color: $color-fondo;
+}
+
 aside ul {
 	list-style: none;
-}
-
-aside ul li a {
-    font-size: 1.4rem;
-    text-align: right;
-    text-decoration: none;
-	text-transform: capitalize;
-    padding-right: 15px;
-    color: $color-fuente-principal;
-    line-height: 1.9rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 1px dotted $color-fuente-principal;
-    display: block;
-    transition: padding 1s;
-}
-
-aside ul li a:hover {
-    padding-right: 25%;
-    color: yellow;
+    li a {
+        font-size: 1.4rem;
+        text-align: right;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-right: 15px;
+        color: $color-fuente-principal;
+        line-height: 1.9rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px dotted $color-fuente-principal;
+        display: block;
+        transition: padding 1s;
+        &:hover {
+            padding-right: 25%;
+            color: yellow;
+        }
+    }
 }
 
 footer {
 	height: 90px;
 	background: $color-fondo;
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;*/
+    nav {
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-footer nav {
-    margin-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
 #footer-right {
     width: 25%;
     height: 50px;
@@ -288,35 +285,33 @@ article#contacto {
 #formularioContacto {
     display: flex;
     flex-direction: column;
-}
-#formularioContacto input, #formularioContacto textarea {
-    width: 94%;
-    height: 45px;
-    margin: 0px auto 20px auto;
-    font-size: 1.1rem;
-    color: rgb(169, 166, 166);
-}
-#formularioContacto input {
-    height: 45px;
-}
-
-#formularioContacto textarea {
-    height: 207px;
-}
-#formularioContacto input[type='submit']{
-    width: 307px;
-    background: rgb(195, 67, 67);
-    color: $color-fuente-principal;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    border: none;
-    transition: font-size 1s;
-    align-self: flex-end;
-    margin: 0px 5px;
-}
-
-#formularioContacto input[type='submit']:hover {
-    font-size: 1.7rem;
+    input, textarea {
+        width: 94%;
+        height: 45px;
+        margin: 0px auto 20px auto;
+        font-size: 1.1rem;
+        color: rgb(169, 166, 166);
+    }
+    input {
+        height: 45px;
+    }
+    textarea {
+        height: 207px;
+    }
+    input[type='submit']{
+        width: 307px;
+        background: rgb(195, 67, 67);
+        color: $color-fuente-principal;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border: none;
+        transition: font-size 1s;
+        align-self: flex-end;
+        margin: 0px 20px;
+        &:hover {
+            font-size: 1.7rem;
+        }
+    }
 }
 
 /* Estilos página skateboarding */
@@ -340,15 +335,17 @@ article#contacto {
 }
 .dosColumnas {
     column-count: 2;
+    p {
+        margin-bottom: 1rem;
+        line-height: 2.3rem;
+    }
 }
 .tresColumnas {
     column-count:3;
 }
-.dosColumnas p {
-    margin-bottom: 1rem;
-    line-height: 2.3rem;
-}
+
 div.dosColumnas img {
     float: left;
     margin: 0px 15px 15px 0px;
 }
+
