@@ -1,96 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saltos brutales eventos mortales - XGames</title>
-    <meta name="description" content="Toda la información de los Xgames, fechas, lugares, deportes, fotos y los mejores deportistas">
+    <meta name="description"
+        content="Toda la información de los Xgames, fechas, lugares, deportes, fotos y los mejores deportistas">
     <meta name="keywords" content="deportes, deportistas, juegos, crossfit, moto, snowboard">
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="icon" type="image/x-icon" href="img/apple-touch-icon-72x72-precomposed.png">
 </head>
+
 <body>
     <div class="container-md">
         <header class="navbar navbar-expand-lg d-flex justify-content-between">
-            <div id="Logo"><a href="index.html" class="navbar-brand" title="Logo de Xgames">
-                <img alt="Logo Xgames" src="img/logo-xgames.png"> </a>
+            <div id="Logo">
+                <a href="index.html" class="navbar-brand" title="Logo de Xgames">
+                    <img src="img/logo-xgames.png" alt="Logo Xgames" title="Logo Xgames">
+                </a>
             </div>
-        <div  class="d-flex flex-column justify-content-between align-items-end Right-header">
-            
-            <form class="mb-auto mt-4 me-4" action="buscador.php" method="post" id="Buscar" name="Buscar" title="Buscar en el sitio Xgames">
-                <input type="text" id="consulta" name="consulta" placeholder="su busqueda" maxlength="30">
-                <input type="submit" name="Buscar-consulta" title="Botón de busqueda" value="Buscar">
-            </form>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <nav class="me-4 mb-4">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="skateboarding.html">Skateboarding</a></li>
-                        <li class="nav-item"><a class="nav-link" href="snowboarding.html">SnowBoarding</a></li>
-                        <li class="nav-item"><a class="actual  nav-link" href="moto.html">Moto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                      </ul>
+            <div class="d-flex flex-column justify-content-between align-items-end Right-header">
+
+                <form class="mb-auto mt-4 me-4" action="buscador.php" method="post" id="Buscar" name="Buscar"
+                    title="Buscar en el sitio Xgames">
+                    <input type="text" id="consulta" name="consulta" placeholder="su busqueda" maxlength="30">
+                    <input type="submit" name="Buscar-consulta" title="Botón de busqueda" value="Buscar">
+                </form>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <nav class="me-4 mb-4">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="skateboarding.html">Skateboarding</a></li>
+                            <li class="nav-item"><a class="nav-link" href="snowboarding.html">SnowBoarding</a></li>
+                            <li class="nav-item"><a class="actual  nav-link" href="moto.html">Moto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            </nav>
-        </div>
-    </header>
-    <figure>
-        <img src="img/Honda.jpg" alt="Foto MotoCross">
-        <figcaption  class="d-none d-sm-block" >Moto</figcaption>
-    </figure>
-    <main class="row">
-        <section class=" col-lg-8">
+        </header>
+        <figure>
+            <img src="img/Honda.jpg" alt="Foto MotoCross">
+            <figcaption class="d-none d-sm-block">Moto</figcaption>
+        </figure>
+        <main class="row">
+            <section class=" col-lg-8">
                 <h2>Aventuras sobre la moto</h2>
                 <div class="tresColumnas">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris diam tortor, consequat vel leo ac, accumsan rhoncus orci. Maecenas id nibh aliquam, fringilla purus ut, dignissim lectus. Sed ultrices condimentum mi ac scelerisque. Integer dapibus nibh sed elit pellentesque, vitae euismod enim imperdiet. Phasellus vehicula imperdiet odio, nec feugiat turpis. In hendrerit neque nec purus iaculis, posuere convallis leo accumsan. Mauris mollis quis justo eu vehicula. Pellentesque consequat nisi ac tortor vestibulum, eget feugiat ipsum sagittis. Vestibulum sollicitudin lorem purus, id semper nibh tempor eget. Aliquam sit amet libero ac massa ullamcorper sollicitudin vel non arcu. Maecenas mi purus, suscipit cursus neque non, venenatis malesuada elit. Nam lectus lectus, laoreet nec magna vitae, posuere pellentesque tellus.</p>
-                    <p>Ut consequat lectus ut purus tincidunt volutpat. Nullam nec sodales dolor, eu placerat arcu. Integer in elementum dolor, vitae condimentum mauris. Praesent suscipit dolor leo, non convallis ante mollis eget. Suspendisse potenti. Phasellus at lorem malesuada, accumsan lectus cursus, porta orci. Suspendisse potenti. Donec convallis adipiscing sem ut mollis.</p>
-                    <p>Curabitur nisi magna, blandit non felis eget, lacinia volutpat purus. Cras arcu mauris, vulputate nec nisi in, auctor tempor nisl. Vestibulum non urna erat. Nam sem nisi, fermentum vitae feugiat vel, rhoncus at ipsum. Sed ut bibendum elit. Ut ut dapibus metus, et pulvinar felis. Mauris a eleifend purus, eu condimentum turpis. Cras congue, magna non faucibus rutrum, urna dui placerat eros, sit amet cursus dolor ligula ac nibh.</p>
-                    <p>Mauris ac cursus sem, sit amet auctor risus. Vestibulum tincidunt tempor lacus, malesuada elementum dolor rutrum ut. Integer metus sem, semper ac posuere et, eleifend eget leo. Integer varius neque ut ante feugiat vestibulum. Etiam tincidunt, magna sed ullamcorper consectetur, enim leo dictum nunc, sit amet venenatis magna enim porttitor enim. Donec neque enim, convallis scelerisque eros eget, tempor hendrerit justo. Aliquam ac luctus purus. Integer sit amet pretium risus. Fusce dictum urna et turpis eleifend luctus. Quisque tortor orci, condimentum vitae lorem condimentum, rutrum ullamcorper arcu. Pellentesque egestas consequat tortor. Etiam tempus egestas diam. Cras dignissim mollis consequat. Donec in mi ac dui hendrerit viverra ut ut purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec luctus volutpat convallis.</p>
-                    <p>Quisque non mi at leo sodales cursus eu vel erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ac elementum arcu, et tincidunt tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin elit nisl, viverra sed elit quis, vehicula malesuada nulla. Maecenas sodales elit vel placerat convallis. Phasellus sit amet erat eget sem pellentesque sagittis vel eget tortor. Duis sit amet nisl nec mauris tristique mattis feugiat et purus. Nulla vel aliquam nibh. Praesent placerat id felis sed blandit.</p>				
-                </div>	
-    
-        </section>
-        <aside class="col col-lg-4">
-            <div class="asideSection col-11 mx-auto">
-                <h3>Videos de Motos</h3>
-                <iframe width="295" height="166" src="https://www.youtube-nocookie.com/embed/VwAgmNWcmW4?si=-ermGoQJNYXZm67k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="295" height="166" src="https://www.youtube-nocookie.com/embed/BGx4IHXatps?si=uPNYuJWelNjdjDkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="295" height="166" src="https://www.youtube-nocookie.com/embed/_hqk7vCXbo4?si=5wBWqm0T0iwp2T4T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="asideSection col-11 mx-auto">
-                <h3>Noticias Mensuales</h3>
+                    <p>Las aventuras sobre la moto son una experiencia única que despiertan la pasión por la velocidad y
+                        la emoción de la competición. El motocross, una disciplina de X Games, lleva a los intrépidos
+                        pilotos a terrenos extremos, donde desafían la gravedad y ponen a prueba su destreza en saltos
+                        espectaculares y giros audaces. Montar una moto de motocross no es solo un deporte, es una forma
+                        de vida que requiere coraje y habilidad.</p>
+                    <p>En cada salto y cada giro, los pilotos de motocross demuestran su dominio sobre la máquina y su
+                        valentía ante los obstáculos desafiantes. Cada competición es una oportunidad para superar
+                        límites y alcanzar nuevas alturas. La adrenalina fluye a medida que las motos rugen en el
+                        terreno accidentado, creando momentos emocionantes que quedan grabados en la memoria de los
+                        aficionados.</p>
+                    <p>Los circuitos de motocross ofrecen un terreno diverso, desde saltos vertiginosos hasta curvas
+                        cerradas, desafiando la agilidad y la habilidad de los pilotos. Los eventos de X Games son el
+                        escenario perfecto para presenciar estas hazañas audaces. Los motociclistas profesionales, con
+                        años de entrenamiento y dedicación, se enfrentan en una batalla épica por la gloria en cada
+                        competición. La camaradería entre los competidores se combina con la rivalidad feroz, creando un
+                        ambiente único que hace que cada evento sea inolvidable.</p>
+                    <p>A medida que el rugido de los motores llena el aire y las ruedas se levantan del suelo, la
+                        multitud se llena de emoción. Los saltos largos y las maniobras acrobáticas mantienen a los
+                        espectadores al borde de sus asientos. Los campeonatos de motocross de X Games son el epicentro
+                        de la acción, donde los pilotos se convierten en leyendas vivientes y las motos se convierten en
+                        máquinas de velocidad imparables. Cada competición es un espectáculo de destreza, fuerza y
+                        determinación que inspira a todos los que presencian estas aventuras sobre la moto.</p>
+                    <p>Los apasionados del motocross saben que esta es una disciplina que requiere valentía, dedicación
+                        y un espíritu indomable. Las aventuras sobre la moto no se limitan a las competiciones; también
+                        abarcan la exploración de terrenos desconocidos y la superación de desafíos personales. La
+                        comunidad del motocross es una familia unida por la pasión por las dos ruedas y la búsqueda
+                        constante de la emoción. Ya sea en la pista o en los senderos, las aventuras sobre la moto son
+                        una forma de vida que nos recuerda que la libertad y la audacia van de la mano cuando se trata
+                        de montar. ¡Prepárate para vivir estas emocionantes experiencias en el mundo del motocross de X
+                        Games!</p>
+                </div>
+
+            </section>
+            <aside class="col col-lg-4">
+                <div class="asideSection col-11 mx-auto">
+                    <h3>Videos de Motos</h3>
+                    <iframe width="295" height="166"
+                        src="https://www.youtube-nocookie.com/embed/VwAgmNWcmW4?si=-ermGoQJNYXZm67k"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="295" height="166"
+                        src="https://www.youtube-nocookie.com/embed/BGx4IHXatps?si=uPNYuJWelNjdjDkM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="295" height="166"
+                        src="https://www.youtube-nocookie.com/embed/_hqk7vCXbo4?si=5wBWqm0T0iwp2T4T"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="asideSection col-11 mx-auto">
+                    <h3>Noticias Mensuales</h3>
+                    <ul>
+                        <li><a href="#"> Junio</a></li>
+                        <li><a href="#">Julio</a></li>
+                        <li><a href="#">Agosto</a></li>
+                        <li><a href="#">Septiembre</a></li>
+                        <li><a href="#">Octubre</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+        </main>
+        <footer class="d-flex flex-row justify-content-sm-center justify-content-xl-between align-items-center">
+            <nav id="navFooter" class="d-none d-sm-block">
                 <ul>
-                    <li><a href="#"> Junio</a></li>
-                    <li><a href="#">Julio</a></li>
-                    <li><a href="#">Agosto</a></li>
-                    <li><a href="#">Septiembre</a></li>
-                    <li><a href="#">Octubre</a></li>
+                    <li><a href="index.html" title="Página de Inicio">Home</a></li>
+                    <li><a href="skateboarding.html" title="Skate or die">Skateboarding</a></li>
+                    <li><a href="snowboarding.html" title="Todo sobre el snowboad">Snowboarding</a></li>
+                    <li><a href="moto.html" title="Moto y más moto" class="actual">Moto</a></li>
+                    <li><a href="contacto.html" title="Contactanos">Contacto</a></li>
                 </ul>
+            </nav>
+            <div id="footer-right" class="d-none d-md-none d-xl-block">
+                <p>Presidente Riesco, Las Condes, Santiago, Chile.
+                    Teléfono: +56 9 9265 8976 | info@xgames.com</p>
             </div>
-    
-        </aside>
-    </main>
-    <footer class="d-flex flex-row justify-content-sm-center justify-content-xl-between align-items-center">
-        <nav id="navFooter"  class="d-none d-sm-block" >
-          <ul>
-            <li><a href="index.html" title="Página de Inicio" >Home</a></li>
-            <li><a href="skateboarding.html" title="Skate or die" >Skateboarding</a></li>
-            <li><a href="snowboarding.html" title="Todo sobre el snowboad" >Snowboarding</a></li>
-            <li><a href="moto.html" title="Moto y más moto" class="actual">Moto</a></li>
-            <li><a href="contacto.html" title="Contactanos" >Contacto</a></li>
-          </ul>
-        </nav>
-        <div id="footer-right" class="d-none d-md-none d-xl-block">
-          <p>Presidente Riesco, Las Condes, Santiago, Chile.
-            Teléfono: +56 9 9265 8976 | info@xgames.com</p>
-        </div>
-      </footer>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

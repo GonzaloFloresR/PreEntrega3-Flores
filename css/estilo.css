@@ -211,14 +211,14 @@ section article img {
 section article p {
   font-size: 1.5rem;
   line-height: 1.9rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0px;
 }
 
 /* line 201, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 section article p + p {
   font-weight: normal;
   color: yellow;
-  margin-bottom: 5px;
+  margin: 1rem 0px;
 }
 
 /* line 207, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
@@ -242,13 +242,21 @@ section article p + a:hover {
 /* line 222, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 aside div.asideSection iframe {
   width: 95%;
-  /*  height: 400px;
-	aspect-ratio:16/9; */
+  height: auto;
+  aspect-ratio: 16/9;
   border: 4px solid white;
   margin: 7px 15px;
 }
 
 /* line 230, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+aside div.mapa iframe {
+  width: 80%;
+  height: 400px;
+  border: 4px solid white;
+  margin: 7px 10%;
+}
+
+/* line 237, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 .Pieiframe {
   color: yellow;
   line-height: 30px;
@@ -260,12 +268,12 @@ aside div.asideSection iframe {
   background-color: black;
 }
 
-/* line 241, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 248, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 aside ul {
   list-style: none;
 }
 
-/* line 243, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 250, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 aside ul li a {
   font-size: 1.4rem;
   text-align: right;
@@ -280,26 +288,26 @@ aside ul li a {
   transition: padding 1s;
 }
 
-/* line 255, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 262, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 aside ul li a:hover {
   padding-right: 25%;
   color: yellow;
 }
 
-/* line 262, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 269, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 footer {
   height: 90px;
   background: black;
 }
 
-/* line 265, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 272, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 footer nav {
   margin-left: 20px;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 272, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 279, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 #footer-right {
   width: 25%;
   height: 50px;
@@ -308,18 +316,18 @@ footer nav {
 }
 
 /* Estilo del formularioContacto */
-/* line 281, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 288, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 article#contacto {
   background: black;
 }
 
-/* line 285, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 292, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 #formularioContacto {
   display: flex;
   flex-direction: column;
 }
 
-/* line 288, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 295, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 #formularioContacto input, #formularioContacto textarea {
   width: 94%;
   height: 45px;
@@ -328,17 +336,17 @@ article#contacto {
   color: #a9a6a6;
 }
 
-/* line 295, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 302, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 #formularioContacto input {
   height: 45px;
 }
 
-/* line 298, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 305, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 #formularioContacto textarea {
   height: 207px;
 }
 
-/* line 301, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 308, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 #formularioContacto input[type='submit'] {
   width: 307px;
   background: #c34343;
@@ -351,13 +359,13 @@ article#contacto {
   margin: 0px 20px;
 }
 
-/* line 311, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 318, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 #formularioContacto input[type='submit']:hover {
   font-size: 1.7rem;
 }
 
 /* Estilos página skateboarding */
-/* line 319, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 326, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 .dosColumnas, .tresColumnas {
   column-gap: 25px;
   /* Separacion entre columnas */
@@ -378,23 +386,23 @@ article#contacto {
   margin-bottom: 25px;
 }
 
-/* line 336, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 343, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 .dosColumnas {
   column-count: 2;
 }
 
-/* line 338, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 345, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 .dosColumnas p {
   margin-bottom: 1rem;
   line-height: 2.3rem;
 }
 
-/* line 343, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 350, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 .tresColumnas {
   column-count: 3;
 }
 
-/* line 347, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
+/* line 354, ../../../../../../../../../../../../../Applications/MAMP/htdocs/CODERHOUSE/proyecto-sass/sass/estilo.scss */
 div.dosColumnas img {
   float: left;
   margin: 0px 15px 15px 0px;
